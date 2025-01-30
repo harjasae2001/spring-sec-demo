@@ -1,4 +1,4 @@
-package com.example.spring_sec_demo;
+package com.example.spring_sec_demo.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping("hello")
     public String greet(HttpServletRequest request) {
-    return "Hello World " + request.getSession().getId();
+    return "Hello World ";
     }
 
     @GetMapping("about")
